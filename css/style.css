@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap');
+@import url("utility.css");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+body {
+    font-family: "Nunito";
+    font-size: 1.6rem;
+}
+:root {
+    --bacode-black: #000;
+    --bacode-white: #ffffff;
+    --bacode-gray: #808080;
+    --bacode-light-blue: #39f;
+    --bacode-green: #008000;
+    --bacode-red: #f11717;
+    --bacode-orange: #c78100c5;
+    --transition: 0.5s ease-in-out;
+}
+main {
+    min-height: 86.5vh;
+    min-height: 86.5dvh;
+}
+header {
+    background: var(--bacode-black);
+}
+nav {
+    height: 4.5rem;
+}
+.search-text, .current-user, .no-user, .individual-repository {
+    padding: 1.5rem 1rem 1rem 1rem;
+}
+.search-text-wrapper h1, .search-text-wrapper p, .search-text-wrapper input, .current-user-stats, .current-user-particulars-items {
+    padding-bottom: 0.5rem;
+}
+.user-search-input {
+    background: transparent;
+    height: 3rem;
+    padding-left: 0.5rem;
+    font-family: "Nunito";
+    color: var(--bacode-black);
+}
+.user-search-input:focus {
+    outline: none; 
+    border: 2px solid var(--bacode-light-blue);
+}
+.user-search-input::-webkit-search-cancel-button {
+    display: none;
+}
+.current-user {
+    min-height: 30rem;
+}
+.current-user-profile-img {
+    width: 20%;
+    height: 100%;
+}
+.current-user-profile-img-wrapper{
+    height: 92%;
+    margin-bottom: 0.5rem;
+}
+.current-user-profile-info {
+    width: 80%;
+    padding-left: 2rem;
+}
+li {
+    list-style-type: none;
+}
+button {
+    all: unset;
+    height: 3rem;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.9;
+}
+.badge {
+    padding: 0.5rem;
+    margin: 0.5rem 0.5rem 0 0;
+}
+.badge:first-child, .badge:last-child, .repository-badge:first-child {
+    --bacode-light-blue: #0172e4dc;
+    background: var(--bacode-light-blue);
+}
+.notification-section {
+    min-height: 3.5rem;
+    margin-bottom: 0.5rem;
+    transform: translateY(-0.3rem);
+}
+.success-notification {
+    background: var(--bacode-green);
+}
+.error-notification {
+    background: var(--bacode-red);
+}
+.no-user h4 {
+    margin-bottom: 3rem;
+}
+.repository-link {
+    width: 70%;
+}
+.repository-link a:hover {
+    color: var(--bacode-light-blue);
+    font-weight: bold;
+}
+.repository-info {
+    width: 30%;
+}
+.repository-badge {
+    font-size: 1.4rem;
+    padding: 0.4rem;
+    margin: 0 0.5rem 0 0;
+}
+.copyright-section {
+    padding: 0.5rem 0;
+}
+@media screen and (max-width: 900px) {
+    main {
+        min-height: 88.1vh;
+        min-height: 88.1dvh;
+    }
+    .current-user-profile-img {
+        margin-bottom: 0.5rem;
+    }
+    .current-user-profile-info {
+        padding-left: 0;
+    }
+    .current-user-stats {
+        flex-wrap: wrap;
+    }
+    .badge:first-child, .badge:last-child {
+        background: var(--bacode-orange);
+    }
+    .repository-badge:first-child {
+        background: var(--bacode-gray);
+    }
+    .notification-section {
+        min-height: 6rem;
+    }
+    .res-width-100 {
+        width: 100%;
+    }
+    .res-d-block {
+        display: block;
+    }
+}

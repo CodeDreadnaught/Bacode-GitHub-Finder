@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacode GitHub Finder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex jc-c mb-1rem">
+            <nav class="d-flex ai-c width-90">
+                <section class="logo"><a href="#" class="text-d-none color-bacode-white">Bacode GitHub Finder</a></section>
+            </nav>
+        </header>
+        <main class="d-flex jc-c">
+            <div class="app-wrapper width-90">
+                <div class="search-text-wrapper">
+                    <section class="search-text gray-border gen-border-rad mb-1rem">
+                        <h1>Search for a GitHub User</h1>
+                        <p>Enter a GitHub username to get a user profile and its repositories.</p>
+                        <input type="search" class="user-search-input gen-border-rad width-100 gray-border transition" placeholder="GitHub Username...">
+                    </section>
+                    <section class="user-profile"></section>
+                </div>
+            </div>
+        </main>
+        <footer class="d-flex jc-c text-a-c">
+            <div class="copyright-section width-90">&copy;2023 Bacode Inc.</div>
+        </footer>
+    </div>
+    <script type="module" src="javascript/app.js"></script>
+</body>
+</html>
